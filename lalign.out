@@ -1,0 +1,94 @@
+# /fasta/bin/lalign36 -m 9i lalign-I20241202-134301-0457-91652164-p1m.asequence lalign-I20241202-134301-0457-91652164-p1m.bsequence -p -s BL50 -f -12 -g -2 -E 10.0 -m 0 -m "F11 lalign-I20241202-134301-0457-91652164-p1m.output.lav"
+LALIGN finds non-overlapping local alignments
+ version 36.3.8h May, 2020
+Please cite:
+ X. Huang and W. Miller (1991) Adv. Appl. Math. 12:373-381
+
+Query: lalign-I20241202-134301-0457-91652164-p1m.asequence
+  1>>>tr|E2A149|E2A149_CAMFO Juvenile hormone epoxide hydrolase 2 OS=Camponotus floridanus OX=104421 GN=EAG_00897 PE=3 SV=1 - 241 aa
+Library: lalign-I20241202-134301-0457-91652164-p1m.bsequence
+      461 residues in     1 sequences
+
+Statistics: (shuffled [500]) MLE statistics: Lambda= 0.1730;  K=0.02342
+ statistics sampled from 1 (1) to 500 sequences
+Threshold: E() < 10 score: 32
+Algorithm: Smith-Waterman (SSE2, Michael Farrar 2006) (7.2 Nov 2010)
+Parameters: BL50 matrix (15:-5), open/ext: -12/-2
+ Scan time:  0.010
+
+The best non-identical alignments are:     ls-w bits E(1) %_id  %_sim  alen
+sp|Q6U6J0|HYEP_BOMMO Juvenile hormo ( 461)  804 206.1 9.9e-58 0.492 0.787  240
++-                                           42 15.9    0.84 0.312 0.531   32
++-                                           41 15.7    0.88 0.600 0.700   10
++-                                           39 15.2    0.95 0.235 0.500   34
+
+>>>tr|E2A149|E2A149_CAMFO, 241 aa vs lalign-I20241202-134301-0457-91652164-p1m.bsequence library
+
+>>sp|Q6U6J0|HYEP_BOMMO Juvenile hormone epoxide hydrolas  (461 aa)
+ Waterman-Eggert score: 804;  206.1 bits; E(1) <  9.9e-58
+49.2% identity (78.8% similar) in 240 aa overlap (4-241:10-243)
+
+            10        20        30         40         50        60 
+tr|E2A PLATVISIGCCSIVYVLIRYYSKKTKLPELS-QTWWTPGT-ENSVNNDIRPYEVVFSEEL
+       :: .. ::     .:.:.   ..   .:.:. . :: :   ... ...:.:.:..::: .
+sp|Q6U PLLVLASIP----LYLLV--LKSPPPMPKLDLEEWWGPPELKQKQDTSIKPFEITFSETM
+      10            20          30        40        50        60   
+
+              70        80        90       100       110       120 
+tr|E2A VSDLKYRLKHTRSLTPPLKNVAWNYGTNTDALRKLLNYWVDNYNFQERLKFINQYPHFKT
+       :..:: :.:. : ..:::..:...:: :.  : . :.::...: : :: ::.::::::::
+sp|Q6U VKELKERIKKRRPFAPPLEGVGFKYGFNSKQLDSWLKYWAEEYPFAERQKFLNQYPHFKT
+            70        80        90       100       110       120   
+
+             130       140       150       160       170       180 
+tr|E2A NIQGLDIHFIRIKPSNAEKKRILPLLILHGWPGSIMEFYKIIPLLTTPRPEHDFVFEVIA
+       :::::.:::.:: :.  .  .:.:::.:::::::. :::. :: ::.   ...:..:.::
+sp|Q6U NIQGLNIHFMRITPKVPKDVEIVPLLLLHGWPGSVREFYEAIPHLTAVSRDRNFALEIIA
+           130       140       150       160       170       180   
+
+             190       200       210       220       230       240 
+tr|E2A PSLPGFGFSTAATIPGLSYIQMSVVLKNLMLRLGYNQFYVQGGDWGSGIVNAMSTLFPQQ
+       :::::.::: ::. :::.  ...:..:::: ::::.:.::::::::. : .::.: ::..
+sp|Q6U PSLPGYGFSDAAVRPGLAAAEVAVIFKNLMARLGYKQYYVQGGDWGALIGSAMATSFPKE
+           190       200       210       220       230       240   
+
+>--
+ Waterman-Eggert score: 42;  15.9 bits; E(1) <  0.84
+31.2% identity (53.1% similar) in 32 aa overlap (144-175:9-35)
+
+           150       160       170     
+tr|E2A LPLLILHGWPGSIMEFYKIIPLLTTPRPEHDF
+       ::::.: . :     .: ..     : :. :.
+sp|Q6U LPLLVLASIP-----LYLLVLKSPPPMPKLDL
+       10             20        30     
+
+>--
+ Waterman-Eggert score: 41;  15.7 bits; E(1) <  0.88
+60.0% identity (70.0% similar) in 10 aa overlap (180-189:77-86)
+
+     180         
+tr|E2A IAPSLPGFGF
+       .:: : : ::
+sp|Q6U FAPPLEGVGF
+         80      
+
+>--
+ Waterman-Eggert score: 39;  15.2 bits; E(1) <  0.95
+23.5% identity (50.0% similar) in 34 aa overlap (151-184:239-272)
+
+              160       170       180    
+tr|E2A GWPGSIMEFYKIIPLLTTPRPEHDFVFEVIAPSL
+       ..:  :. :.. . :  .:         .. :::
+sp|Q6U SFPKEIIGFHSYMALTLSPAATFLEFVGALFPSL
+      240       250       260       270  
+
+
+>>>///
+
+241 residues in 1 query   sequences
+461 residues in 1 library sequences
+ Scomplib [36.3.8h May, 2020]
+ start: Mon Dec  2 13:43:04 2024 done: Mon Dec  2 13:43:04 2024
+ Total Scan time:  0.010 Total Display time:  0.010
+
+Function used was LALIGN [36.3.8h May, 2020]
